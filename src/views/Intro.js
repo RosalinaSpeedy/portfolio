@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import LogoButton from '../components/intro/LogoButton';
 import Navbar from '../components/intro/Navbar';
 
-const Intro = () => {
+const intro = () => {
     return (
         <div>
             <LogoButton/>
@@ -13,4 +13,4 @@ const Intro = () => {
     )
 }
 
-export default Intro;
+export default intro;
