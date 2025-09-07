@@ -1,0 +1,32 @@
+li {
+    color: #CCCCCC;
+    padding: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    margin: auto;
+}
+.logoLink {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 25.5%;
+    align-self: flex-start;
+    margin: auto;
+    display: inline-block;
+}
+.logoImage {
+    width: 65%;
+}
+.navbarContainer {
+    /* margin-left: 12.5%; */
+    width: 45%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+.navbarList {
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}

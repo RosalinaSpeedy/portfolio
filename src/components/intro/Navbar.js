@@ -2,10 +2,9 @@ import React from 'react';
 import intro from './intro.css';
 
 const Navbar = () => {
-  return (
-    <div>
-        <div>
-            <ul>
+    return (
+        <div class="navbarContainer">
+            <ul class="navbarList">
                 <li>
                     // intro
                 </li>
@@ -23,8 +22,7 @@ const Navbar = () => {
                 </li>
             </ul>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Navbar

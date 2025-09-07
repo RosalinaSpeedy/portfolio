@@ -1,0 +1,7 @@
+.inlineHeader * {
+    display: inline-block;
+}
+.inlineHeader {
+    display: block;
+    text-align: center;
+}

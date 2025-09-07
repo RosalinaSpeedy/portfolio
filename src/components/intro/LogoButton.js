@@ -5,7 +5,7 @@ const LogoButton = () => {
   return (
     <a class="logoLink">
       <div class="logoImageContainer">
-        <img src="/icons/logo.png"/>
+        <img class="logoImage" src="/icons/logo.png"/>
       </div>
     </a>
   )
