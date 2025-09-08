@@ -1,3 +1,6 @@
+* {
+    font-family: "consolas";
+}
 li {
     color: #CCCCCC;
     padding: 2%;
@@ -5,22 +8,29 @@ li {
     margin-bottom: auto;
     align-items: center;
     margin: auto;
+    width: 15%
+}
+li div {
+    width: 100%;
+    font-size: 123%;
 }
 .logoLink {
+    position: absolute;
+    left: 2%;
+    top: 2%;
     margin-top: auto;
     margin-bottom: auto;
-    padding-right: 25.5%;
     align-self: flex-start;
     margin: auto;
     display: inline-block;
 }
 .logoImage {
-    width: 65%;
+    width: 80%;
 }
 .navbarContainer {
     /* margin-left: 12.5%; */
-    width: 45%;
-    margin-top: auto;
+    width: 65%;
+    margin-top: 1%;
     margin-bottom: auto;
     text-align: center;
 }

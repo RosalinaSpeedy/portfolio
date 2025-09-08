@@ -6,19 +6,29 @@ const Navbar = () => {
         <div class="navbarContainer">
             <ul class="navbarList">
                 <li>
-                    // intro
+                    <div>
+                        // intro
+                    </div>
                 </li>
                 <li>
-                    // skills
+                    <div>
+                        // skills
+                    </div>
                 </li>
                 <li>
-                    // projects
+                    <div>
+                        // work
+                    </div>
                 </li>
                 <li>
-                    // work
+                    <div>
+                        // projects
+                    </div>
                 </li>
                 <li>
-                    // contact
+                    <div>
+                        // contact
+                    </div>
                 </li>
             </ul>
         </div>
