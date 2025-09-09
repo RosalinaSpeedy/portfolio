@@ -1,6 +1,7 @@
 * {
     font-family: "consolas";
 }
+
 li {
     color: #CCCCCC;
     padding: 2%;
@@ -10,22 +11,27 @@ li {
     margin: auto;
     width: 15%
 }
+
 li a div {
     width: 100%;
     font-size: 123%;
 }
+
 li a {
     color: #CCCCCC;
-    transition: color 0.15s ease;    
+    transition: color 0.15s ease;
 }
+
 li a:hover {
-    color: #2EA043; 
+    color: #2EA043;
     cursor: pointer;
 }
+
 li a:active {
-    color: #4DAAFC; 
+    color: #4DAAFC;
     cursor: pointer;
 }
+
 .logoLink {
     position: absolute;
     left: 2%;
@@ -36,9 +42,11 @@ li a:active {
     margin: auto;
     display: inline-block;
 }
+
 .logoImage {
     width: 80%;
 }
+
 .navbarContainer {
     /* margin-left: 12.5%; */
     width: 65%;
@@ -46,17 +54,20 @@ li a:active {
     margin-bottom: auto;
     text-align: center;
 }
+
 .navbarList {
     width: 80%;
     margin-top: auto;
     margin-bottom: auto;
 }
+
 .splashContainer {
     width: 65%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
+
 .splashImage {
     margin-left: auto;
     margin-right: auto;
@@ -71,6 +82,7 @@ li a:active {
     height: 15vw;
     margin-top: 5%;
 }
+
 .splashText {
     margin-top: 3.5%;
     font-size: 6vw;
@@ -80,9 +92,130 @@ li a:active {
     color: #CCCCCC;
     text-shadow: 0.1vw 0.1vw 2vw black;
 }
+
 .splashTagline {
     font-size: 1.4vw;
     font-weight: bold;
     color: #CCCCCC;
     text-shadow: 0.1vw 0.1vw 0.4vw black;
+}
+
+.arrowDownContainer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4vw;
+    border: 0.25vw #CCCCCC solid;
+    border-width: 50%;
+    width: 4vw;
+    height: 7vw;
+    padding-top: 1vw;
+}
+
+.arrows {
+    width: 3vw;
+    height: 5vw;
+    position: relative;
+    top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.arrows path {
+    stroke: #04ebfb;
+    fill: transparent;
+    stroke-width: 0.2vw;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+    {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
+}
+.splashExtraTextContainer {
+    color: #2EA043;
+    text-align: left;
+    margin-left: 13.15vw;
+    margin-right: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw
+}
+.extraComment {
+    margin-left: 2.5%;
+    width: 70%;
+}
+.commentContainer *{
+    display: inline-block;
+}
+.highlightedNumber {
+    color: #CCCCCC;
+    width: 2%;
+}
+.commentNumber {
+    color: #7f7e7e; 
+    width: 2%;
+}
+.highlightedComment {
+   border-top: 1px solid #7f7e7e; 
+   border-bottom: 1px solid #7f7e7e;
+   width: 73.5%;
+}
+.verticalCommentLine {
+    border-right: 1px solid #7f7e7e;
+    padding-right: 2.5%;
+    margin-right: 2.5%;
 }
