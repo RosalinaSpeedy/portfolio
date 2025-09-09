@@ -20,9 +20,9 @@ const Splash = () => {
       </div>
       <div class="arrowDownContainer">
         <svg class="arrows">
-          <path class="a1" d="M0 0 L22.5 32 L50 0"></path>
-          <path class="a2" d="M0 20 L22.5 52 L50 20"></path>
-          <path class="a3" d="M0 40 L22.5 72 L50 40"></path>
+          <path class="a1" d="M0 0 L23 32 L46 0"></path>
+          <path class="a2" d="M0 20 L23 52 L46 20"></path>
+          <path class="a3" d="M0 40 L23 72 L46 40"></path>
         </svg>
       </div>
     </div>
