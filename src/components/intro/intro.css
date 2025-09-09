@@ -10,9 +10,21 @@ li {
     margin: auto;
     width: 15%
 }
-li div {
+li a div {
     width: 100%;
     font-size: 123%;
+}
+li a {
+    color: #CCCCCC;
+    transition: color 0.15s ease;    
+}
+li a:hover {
+    color: #2EA043; 
+    cursor: pointer;
+}
+li a:active {
+    color: #4DAAFC; 
+    cursor: pointer;
 }
 .logoLink {
     position: absolute;
