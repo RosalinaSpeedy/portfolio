@@ -1,5 +1,4 @@
 import React from 'react';
-import intro from './intro.css';
 
 import { useState, useEffect, useRef } from 'react';
 

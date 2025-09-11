@@ -4,7 +4,7 @@ import intro from './intro.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-import FadeInElement from './FadeInElement';
+import FadeInElement from './common/FadeInElement';
 
 const comments = ["/*".split(""),
 "*/".split(""),
