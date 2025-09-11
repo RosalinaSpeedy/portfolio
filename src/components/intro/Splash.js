@@ -36,7 +36,7 @@ const Splash = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      console.log(currentComment)
+      //console.log(currentComment)
       switch (currentComment) {
         case 0:
           setComment1Container("commentContainer highlightedComment");
