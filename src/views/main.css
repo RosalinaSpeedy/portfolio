@@ -1,8 +1,11 @@
 .inlineHeader * {
     display: inline-block;
+    padding-left: 0;
+    padding-top: 0.8vh;
 }
 .inlineHeader {
     display: block;
     text-align: center;
     width: 100%;
+    margin-bottom: 13.5vh;
 }

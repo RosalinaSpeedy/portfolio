@@ -4,10 +4,12 @@ import intro from './intro.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
+import FadeInElement from './FadeInElement';
+
 const comments = ["/*".split(""),
-  "*/".split(""),
-  "Can someone please write unit tests for this portfolio page?".split(""),
-  "You're having a laugh mate.".split("")]
+"*/".split(""),
+"Can someone please write unit tests for this portfolio page?".split(""),
+"You're having a laugh mate.".split("")]
 
 //const comment2 = "";
 //console.log(comment2.length)
@@ -82,23 +84,30 @@ const Splash = () => {
         <div class="splashText">
           BEN CRADDOCK
         </div>
-        <div class="splashTagline">
-          FULL STACK, APP AND AI DEVELOPER
+        <FadeInElement>
+          <div class="splashTagline">
+            FULL STACK, APP AND AI DEVELOPER
+          </div>
+        </FadeInElement>
+      </div>
+
+      <FadeInElement>
+        <div class="splashExtraTextContainer">
+          <div class={comment1Container}><div class={comment1Number}>25</div><div class="extraComment">{comment1Typed}</div></div>
+          <div class={comment2Container}><div class={comment2Number + " verticalCommentLine"}>26</div><div class="longComment">{comment2Typed}</div></div>
+          <div class={comment3Container}><div class={comment3Number + " verticalCommentLine"}>27</div><div class="longComment">{comment3Typed}</div></div>
+          <div class={comment4Container}><div class={comment4Number}>28</div><div class="extraComment">{comment4Typed}</div></div>
         </div>
-      </div>
-      <div class="splashExtraTextContainer">
-        <div class={comment1Container}><div class={comment1Number}>25</div><div class="extraComment">{comment1Typed}</div></div>
-        <div class={comment2Container}><div class={comment2Number + " verticalCommentLine"}>26</div><div class="longComment">{comment2Typed}</div></div>
-        <div class={comment3Container}><div class={comment3Number + " verticalCommentLine"}>27</div><div class="longComment">{comment3Typed}</div></div>
-        <div class={comment4Container}><div class={comment4Number}>28</div><div class="extraComment">{comment4Typed}</div></div>
-      </div>
-      <div class="arrowDownContainer">
-        <svg viewBox="0 0 47 80" class="arrows">
-          <path class="a1" d="M0 0 L23 32 L46 0"></path>
-          <path class="a2" d="M0 20 L23 52 L46 20"></path>
-          <path class="a3" d="M0 40 L23 72 L46 40"></path>
-        </svg>
-      </div>
+      </FadeInElement>
+      <FadeInElement>
+        <div class="arrowDownContainer">
+          <svg viewBox="0 0 47 80" class="arrows">
+            <path class="a1" d="M0 0 L23 32 L46 0"></path>
+            <path class="a2" d="M0 20 L23 52 L46 20"></path>
+            <path class="a3" d="M0 40 L23 72 L46 40"></path>
+          </svg>
+        </div>
+      </FadeInElement>
     </div>
   )
 }
