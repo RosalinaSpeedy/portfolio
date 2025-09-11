@@ -45,7 +45,18 @@ li a:active {
 
 .logoImage {
     width: 80%;
+    opacity: 1;
+    transition: opacity 0.15s ease-in-out;
+    -moz-transition: opacity 0.15s ease-in-out;
+    -webkit-transition: opacity 0.15s ease-in-out;
 }
+
+.logoImage:hover {
+    opacity: 0.6;
+    transition: opacity 0.15s ease-in-out;
+    -moz-transition: opacity 0.15s ease-in-out;
+    -webkit-transition: opacity 0.15s ease-in-out;
+}​
 
 .navbarContainer {
     /* margin-left: 12.5%; */
