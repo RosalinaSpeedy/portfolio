@@ -7,9 +7,12 @@ const FadeInElement = (props) => {
     const domRef = useRef();
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => { if (entry.isIntersecting) { setVisible(entry.isIntersecting) }});
+            entries.forEach(entry => { if (entry.isIntersecting) { 
+                setVisible(entry.isIntersecting)
+            }});
         });
         observer.observe(domRef.current);
+        //console.log(props)
     }, []);
     return (
         <div
@@ -17,6 +20,7 @@ const FadeInElement = (props) => {
             ref={domRef}
         >
             {props.children}
+            
         </div>
     );
 }
