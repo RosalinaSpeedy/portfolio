@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import Intro from './views/Intro.js';
+import Skills from './views/Skills';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <head>
     </head>
     <Intro/>
+    <Skills/>
   </React.StrictMode>
 );
 

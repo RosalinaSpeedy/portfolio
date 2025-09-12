@@ -4,7 +4,7 @@ import intro from './intro.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-import FadeInElement from './common/FadeInElement';
+import FadeInElement from '../common/FadeInElement';
 
 const comments = ["/*".split(""),
 "*/".split(""),
@@ -80,7 +80,9 @@ const Splash = () => {
 
   return (
     <div class="splashContainer">
+      
       <div class="splashImage">
+        
         <div class="splashText">
           BEN CRADDOCK
         </div>
