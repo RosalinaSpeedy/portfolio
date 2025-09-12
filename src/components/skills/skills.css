@@ -6,7 +6,9 @@
     font-weight: bolder;
     color: #CCCCCC;
     text-shadow: 0.1vw 0.1vw 2vw black;
-    margin-bottom: 5vh;
+    margin-bottom: 6vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .terminalContainer {
@@ -16,6 +18,7 @@
     margin-bottom: 2vw;
     border-radius: 2vh;
     border: 2px #CCCCCC solid;
+    text-align: left;
 }
 
 .terminalHeader * {
@@ -42,6 +45,7 @@
 
 .terminalText {
     margin-left: 0.6vw;
+    
 }
 
 .terminalTypewriter {
@@ -51,8 +55,7 @@
 
 .terminalColumn {
     color: #CCCCCC;
-    margin-left: 14.5vw;
-    margin-right: auto;
+    margin-left: auto;
 }
 
 .terminalOptionsBar {
@@ -114,5 +117,42 @@
 
 .AIAndMLOption:active {
     background-color: #ff376f;
-    
+
+}
+.skillsInfoContainer * {
+    display: block;
+    text-align: left;
+    width: 33vw;
+}
+
+.skillsInfoTitle {
+    color: #CCCCCC;
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+.skillsInfoColumn {
+    width: 33vw;
+} 
+
+.skillsBody {
+    color: #CCCCCC;
+}
+
+.skillsBody {
+    border-left: 1px #CCCCCC solid;
+    padding-left: 2.8vw;
+    width: 80%;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.divDisplay {
+    color: #569CD6;
+}
+
+.HTMLCommentsSection {
+    color: #2EA043;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
 }

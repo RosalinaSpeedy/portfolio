@@ -9,3 +9,28 @@
     width: 100%;
     margin-bottom: 10.5vh;
 }
+
+.skillsDisplayContainer * {
+    display: inline-block;
+}
+
+.skillsSection {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillsInfoColumn {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillsWrapper {
+    display: flex;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 5%;
+}
+
