@@ -6,4 +6,112 @@
     font-weight: bolder;
     color: #CCCCCC;
     text-shadow: 0.1vw 0.1vw 2vw black;
+    margin-bottom: 5vh;
+}
+
+.terminalContainer {
+    background-color: black;
+    width: 33vw;
+    height: 50vh;
+    margin-bottom: 2vw;
+    border-radius: 2vh;
+    border: 2px #CCCCCC solid;
+}
+
+.terminalHeader * {
+    display: inline-block;
+    margin-left: .5vw;
+    margin-right: .5vw;
+    margin-top: .5vw;
+    margin-bottom: .5vw;
+}
+
+.terminalHeaderLink {
+    color: #CCCCCC;
+}
+
+.terminalHeaderLink:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.terminal {
+    border-bottom: 2px #4DAAFC solid;
+    color: white;
+}
+
+.terminalText {
+    margin-left: 0.6vw;
+}
+
+.terminalTypewriter {
+    margin-left: 0.8vw;
+    display: inline-block;
+}
+
+.terminalColumn {
+    color: #CCCCCC;
+    margin-left: 14.5vw;
+    margin-right: auto;
+}
+
+.terminalOptionsBar {
+    width: 33vw;
+    text-align: center;
+    display: flex;
+}
+
+.terminalOptionsBar * {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1 1 auto;
+}
+
+.terminalOption {
+    width: 7vw;
+    font-weight: bolder;
+    padding: 1.5vh;
+    border: 2px #CCCCCC solid;
+    margin-bottom: 2vh;
+    border-radius: 1vw;
+}
+
+.fullStackOption {
+    background-color: #1E2A44;
+    transition: background-color 0.15s ease;
+}
+
+.fullStackOption:hover {
+    background-color: #080b12;
+}
+
+.fullStackOption:active {
+    background-color: #a3bfff;
+}
+
+.mobileAppsOption {
+    background-color: #a06102;
+    transition: background-color 0.15s ease;
+}
+
+.mobileAppsOption:hover {
+    background-color: #533201;
+}
+
+.mobileAppsOption:active {
+    background-color: #ff9c07;
+}
+
+.AIAndMLOption {
+    background-color: #af244c;
+    transition: background-color 0.15s ease;
+}
+
+.AIAndMLOption:hover {
+    background-color: #460d1e;
+}
+
+.AIAndMLOption:active {
+    background-color: #ff376f;
 }
