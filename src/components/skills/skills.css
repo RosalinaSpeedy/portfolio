@@ -45,7 +45,7 @@
 
 .terminalText {
     margin-left: 0.6vw;
-    
+
 }
 
 .terminalTypewriter {
@@ -119,6 +119,7 @@
     background-color: #ff376f;
 
 }
+
 .skillsInfoContainer * {
     display: block;
     text-align: left;
@@ -133,7 +134,7 @@
 
 .skillsInfoColumn {
     width: 33vw;
-} 
+}
 
 .skillsBody {
     color: #CCCCCC;
@@ -155,4 +156,71 @@
     color: #2EA043;
     margin-top: 3vw;
     margin-bottom: 1vw;
+}
+
+.mobileAppsDisplay {
+    margin-top: -3.5vh;
+    border: 2px #CCCCCC solid;
+    border-radius: 1vw;
+    width: 20vw;
+    height: 50vh;
+}
+
+.phoneTop {
+    height: 4vh;
+    width: 20vw;
+    border-bottom: 2px #CCCCCC solid;
+}
+
+.phoneMain {
+    width: 20vw;
+}
+
+.phoneBody {
+    width: 18vw;
+    padding: 1vw;
+}
+
+.phoneBase {
+    width: 20vw;
+    height: 6vw;
+    border-top: 2px #CCCCCC solid;
+}
+
+.reactLogo {
+    height: 14vh;
+    width: 20vw;
+    pointer-events: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .reactLogo {
+        animation: reactLogoSpin infinite 20s linear;
+    }
+}
+
+@keyframes reactLogoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.homeButton {
+    border: 2px #CCCCCC solid;
+    border-radius: 50%;
+    width: 2.7vw;
+    height: 2.7vw;
+    margin: .6vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phoneBody {
+    color: #CCCCCC;
 }

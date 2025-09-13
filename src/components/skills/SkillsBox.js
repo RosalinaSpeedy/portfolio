@@ -22,17 +22,14 @@ const renderSkill = (title, body) => {
             );
         case "Mobile Apps":
             return (
-                <div class="fullStackDisplay">
-                    <div class="divDisplay">
-                        {"<div>"}
-                        <div class="skillsBody">{body}
-                            <div class="HTMLCommentsSection">
-                                <div class="HTMLcomment">{"<!-- Can whoever wrote this div please add comments? -->"}</div>
-                                <div class="HTMLcomment">{"<!-- Seems you beat me to it. :P -->"}</div></div>
+                <div class="mobileAppsDisplay">
+                    <div class="phoneTop"></div>
+                    <div class="phoneMain">
+                        <div class="phoneBody">{body}
                         </div>
-                        {"</div>"}
+                        <img src={"/icons/react.svg"} class="reactLogo" alt="reactLogo" />
                     </div>
-
+                    <div class="phoneBase"><div class="homeButton"></div></div>
                 </div>
             );
         case "AI and ML":
