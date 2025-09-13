@@ -21,16 +21,22 @@
     text-align: left;
 }
 
+.terminalHeader {
+    width: 33vw;
+    display: flex;
+}
+
 .terminalHeader * {
-    display: inline-block;
-    margin-left: .5vw;
-    margin-right: .5vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: .5vw;
     margin-bottom: .5vw;
 }
 
 .terminalHeaderLink {
     color: #CCCCCC;
+    display: flex;
 }
 
 .terminalHeaderLink:hover {
@@ -138,6 +144,7 @@
 
 .skillsBody {
     color: #CCCCCC;
+    height: 30vh;
 }
 
 .skillsBody {
@@ -154,8 +161,8 @@
 
 .HTMLCommentsSection {
     color: #2EA043;
-    margin-top: 3vw;
-    margin-bottom: 1vw;
+    margin-top: 10vh;
+    margin-bottom: 6vh;
 }
 
 .mobileAppsDisplay {
@@ -163,6 +170,7 @@
     border: 2px #CCCCCC solid;
     border-radius: 1vw;
     width: 20vw;
+    height: 100%;
 }
 
 .phoneTop {
@@ -178,12 +186,14 @@
 .phoneBody {
     width: 18vw;
     padding: 1vw;
+    margin-bottom: 5vh;
 }
 
 .phoneBase {
     width: 20vw;
     height: 3.5vw;
     border-top: 2px #CCCCCC solid;
+    margin-top: 8%;
 }
 
 .reactLogo {

@@ -39,7 +39,7 @@ const Skills = () => {
         }
     }, [skillsInfoTitle])
     return (
-        <div class="skillsContainer">
+        <div id="skillsContainer">
             <SkillsTitle />
             <div class="skillsWrapper">
                 <div class="skillsInfoColumn">

@@ -123,6 +123,7 @@ li a:active {
     height: 7vw;
     padding-top: 1vw;
     transition: border 0.3s ease;
+    margin-bottom: 15vh;
 }
 
 .arrowDownContainer:hover {
