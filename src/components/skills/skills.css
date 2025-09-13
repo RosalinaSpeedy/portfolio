@@ -163,7 +163,6 @@
     border: 2px #CCCCCC solid;
     border-radius: 1vw;
     width: 20vw;
-    height: 50vh;
 }
 
 .phoneTop {
@@ -183,7 +182,7 @@
 
 .phoneBase {
     width: 20vw;
-    height: 6vw;
+    height: 3.5vw;
     border-top: 2px #CCCCCC solid;
 }
 
