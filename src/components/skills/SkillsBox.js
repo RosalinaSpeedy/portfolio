@@ -14,7 +14,37 @@ const renderSkill = (title, body) => {
                             <div class="HTMLCommentsSection">
                                 <div class="HTMLcomment">{"<!-- Can whoever wrote this div please add comments? -->"}</div>
                                 <div class="HTMLcomment">{"<!-- Seems you beat me to it. :P -->"}</div></div>
-                            </div>
+                        </div>
+                        {"</div>"}
+                    </div>
+
+                </div>
+            );
+        case "Mobile Apps":
+            return (
+                <div class="fullStackDisplay">
+                    <div class="divDisplay">
+                        {"<div>"}
+                        <div class="skillsBody">{body}
+                            <div class="HTMLCommentsSection">
+                                <div class="HTMLcomment">{"<!-- Can whoever wrote this div please add comments? -->"}</div>
+                                <div class="HTMLcomment">{"<!-- Seems you beat me to it. :P -->"}</div></div>
+                        </div>
+                        {"</div>"}
+                    </div>
+
+                </div>
+            );
+        case "AI and ML":
+            return (
+                <div class="fullStackDisplay">
+                    <div class="divDisplay">
+                        {"<div>"}
+                        <div class="skillsBody">{body}
+                            <div class="HTMLCommentsSection">
+                                <div class="HTMLcomment">{"<!-- Can whoever wrote this div please add comments? -->"}</div>
+                                <div class="HTMLcomment">{"<!-- Seems you beat me to it. :P -->"}</div></div>
+                        </div>
                         {"</div>"}
                     </div>
 

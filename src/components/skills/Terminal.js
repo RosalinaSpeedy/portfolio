@@ -4,15 +4,15 @@ import skills from './skills.css';
 import FadeInElement from '../common/FadeInElement';
 import { Typewriter } from 'react-simple-typewriter'
 
-const Terminal = () => {
+const Terminal = ({setSkillsInfoTitle}) => {
     const [terminalText, setTerminalText] = useState("PF C:\\Ben\\Portfolio>");
     return (
         <FadeInElement>
             <div class="terminalColumn">
                 <div class="terminalOptionsBar">
-                    <a><div class="terminalOption fullStackOption">Full Stack</div></a>
-                    <a><div class="terminalOption mobileAppsOption">Mobile Apps</div></a>
-                    <a><div class="terminalOption AIAndMLOption">AI and ML</div></a>
+                    <a onClick={() => setSkillsInfoTitle("Full Stack")}><div class="terminalOption fullStackOption">Full Stack</div></a>
+                    <a onClick={() => setSkillsInfoTitle("Mobile Apps")}><div class="terminalOption mobileAppsOption">Mobile Apps</div></a>
+                    <a onClick={() => setSkillsInfoTitle("AI and ML")}><div class="terminalOption AIAndMLOption">AI and ML</div></a>
                 </div>
                 <div class="terminalContainer">
                     <div class="terminalHeader">
