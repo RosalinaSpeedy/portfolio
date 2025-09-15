@@ -8,7 +8,7 @@ import Splash from '../components/intro/Splash';
 
 const Intro = () => {
     return (
-        <div>
+        <div id="introContainer">
             <div>
                 <LogoButton/>
                 <div class="inlineHeader">

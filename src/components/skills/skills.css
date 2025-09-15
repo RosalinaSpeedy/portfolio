@@ -233,3 +233,23 @@
 .phoneBody {
     color: #CCCCCC;
 }
+
+.nodeContainer {
+    height: 22vh;
+    width: 22vh;
+    aspect-ratio: 1 / 1;
+    display: contents;
+}
+
+.circleContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.graphContainer {
+    height: 50vh;
+}
+

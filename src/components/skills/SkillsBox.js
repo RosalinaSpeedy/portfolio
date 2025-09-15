@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import skills from './skills.css';
 
 import FadeInElement from '../common/FadeInElement';
+import GraphNet from './GraphNet';
 
 
 
@@ -43,16 +44,8 @@ const SkillsBox = ({ title, body }) => {
                 );
             case "AI and ML":
                 return (
-                    <div class="fullStackDisplay">
-                        <div class="divDisplay">
-                            {"<div>"}
-                            <div class="skillsBody">{body}
-                                <div class="HTMLCommentsSection">
-                                    <div class="HTMLcomment">{"<!-- Can whoever wrote this div please add comments? -->"}</div>
-                                    <div class="HTMLcomment">{"<!-- Seems you beat me to it. :P -->"}</div></div>
-                            </div>
-                            {"</div>"}
-                        </div>
+                    <div class="AIAndMLDisplay">
+                        <GraphNet/>
 
                     </div>
                 );

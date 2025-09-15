@@ -6,12 +6,12 @@ const Navbar = () => {
         <div class="navbarContainer">
             <ul class="navbarList">
                 <li>
-                    <a><div>
+                    <a href='#introcontainer'><div>
                         // intro
                     </div></a>
                 </li>
                 <li>
-                    <a><div>
+                    <a href='#skillsContainer'><div>
                         // skills
                     </div></a>
                 </li>
