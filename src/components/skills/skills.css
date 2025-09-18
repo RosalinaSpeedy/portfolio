@@ -249,7 +249,25 @@
     width: 100%;
 }
 
-.graphContainer {
+#graphContainer {
     height: 50vh;
 }
 
+.graphLine {
+    stroke-width: 3px;
+    stroke: #CCCCCC;
+}
+
+
+circle {
+    transition: all ease 0.3s;
+    fill:#569CD6;
+    stroke-width: 3px;
+    stroke: #CCCCCC;
+    
+}
+circle:hover {
+    fill: #162735;
+    transition: all ease 0.3s;
+    r: 75;
+}
