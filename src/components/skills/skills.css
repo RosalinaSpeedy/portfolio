@@ -257,17 +257,26 @@
     stroke-width: 3px;
     stroke: #CCCCCC;
 }
+.classNode {
+    fill:#c81e84;
+}
 
-
-circle {
+g {
     transition: all ease 0.3s;
-    fill:#569CD6;
     stroke-width: 3px;
     stroke: #CCCCCC;
-    
 }
-circle:hover {
-    fill: #162735;
+
+.classNodeB {
+    fill:#569CD6;
+}
+g:hover circle {
     transition: all ease 0.3s;
     r: 75;
+}
+g:hover .classNodeB {
+    fill: #162735;
+}
+g:hover .classNode {
+    fill:#380825;
 }

@@ -9,9 +9,11 @@ const GraphNet = () => {
         <FadeInElement><div id="graphContainer">
             <svg class="circleContainer" xmlns="http://www.w3.org/2000/svg">
                 <GraphNode
+                    id="A"
                     r={30}
                     cx={110}
                     cy={81}
+                    classNode="classNodeB"
                     lines={[
                         {
                             x1: 105,
@@ -22,9 +24,11 @@ const GraphNet = () => {
                     ]}
                 />
                 <GraphNode
+                    id="B"
                     r={30}
                     cx={175}
                     cy={290}
+                    classNode="classNodeB"
                     lines={[
                         {
                             x1: 175,
@@ -36,9 +40,11 @@ const GraphNet = () => {
                 />
                 
                 <GraphNode
+                    id="C"
                     r={30}
                     cx={90}
                     cy={200}
+                    classNode="classNodeB"
                     lines={[
                         {
                             x1: 90,
@@ -49,9 +55,11 @@ const GraphNet = () => {
                     ]}
                 />
                 <GraphNode
+                    id="D"
                     r={30}
                     cx={400}
                     cy={90}
+                    classNode="classNodeB"
                     lines={[
                         {
                             x1: 400,
@@ -68,9 +76,11 @@ const GraphNet = () => {
                     ]}
                 />
                 <GraphNode
+                    id="E"
                     r={30}
                     cx={400}
                     cy={285}
+                    classNode="classNodeB"
                     lines={[
                         {
                             x1: 400,
@@ -82,9 +92,11 @@ const GraphNet = () => {
                 />
                 
                 <GraphNode
+                    id="F"
                     r={30}
                     cx={200}
                     cy={180}
+                    classNode="classNode"
                     lines={[
 
                     ]}
