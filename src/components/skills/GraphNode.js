@@ -4,8 +4,18 @@ import skills from './skills.css';
 import FadeInElement from '../common/FadeInElement';
 
 const GraphNode = ({ id, r, cx, cy, lines, classNode }) => {
+    const [displayText, setDisplayText] = useState(id);
+    const [delayHandler, setDelayHandler] = useState(null);
 
-    const [text, setText] = useState(id);
+    const handleMouseEnter = () => {
+        setDelayHandler(setTimeout(() => {
+            setDisplayText("AAAAA")
+        }, 250))
+    }
+    const handleMouseLeave = () => {
+        clearTimeout(delayHandler);
+        setDisplayText(id);
+    }
 
     const renderLines = () => {
         const linesMapped = lines.map(line => <line
@@ -19,10 +29,9 @@ const GraphNode = ({ id, r, cx, cy, lines, classNode }) => {
                 {renderLines()}
                 <g
                     class="bubble"
-                    onMouseOver={() => {
-                        setText("AAAAAAAAAAAAAA")
-                    }}
-                    onMouseOut={() => setText(id)}>
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                >
                     <circle
                         r={r}
                         cx={cx}
@@ -30,7 +39,7 @@ const GraphNode = ({ id, r, cx, cy, lines, classNode }) => {
                         class={"circle " + classNode}
                     >
                     </circle>
-                    <text x={cx} y={cy} text-anchor="middle" stroke="#0d0d0dff" stroke-width="2px" dy=".3em">{text}</text>
+                    <text x={cx} y={cy} text-anchor="middle" stroke="#0d0d0dff" stroke-width="0.08vw" dy=".3em">{displayText}</text>
                 </g>
             </svg >
         )
