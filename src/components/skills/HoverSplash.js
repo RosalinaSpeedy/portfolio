@@ -9,9 +9,7 @@ const HoverSplash = ({ hovered, setHovered }) => {
     return (
         <div class={hovered}><div class="hoverWrapper">
             <svg height={30} width={50} class="hoverGraphic">
-                
                 <text x={200} y={20} class="hoverText">// hover!</text>
-                
             </svg>
         </div></div>
     )
