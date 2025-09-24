@@ -3,18 +3,23 @@ import skills from './skills.css';
 
 import FadeInElement from '../common/FadeInElement';
 
-const GraphNode = ({ id, r, cx, cy, lines, classNode }) => {
+const GraphNode = ({ id, r, cx, cy, lines, classNode, text, setHovered }) => {
     const [displayText, setDisplayText] = useState(id);
     const [delayHandler, setDelayHandler] = useState(null);
+    const [largeModifier, setLargeModifier] = useState(0);
+    
 
     const handleMouseEnter = () => {
+        setHovered("fade-in-section");
         setDelayHandler(setTimeout(() => {
-            setDisplayText("AAAAA")
-        }, 250))
+            setDisplayText(text)
+            setLargeModifier(51);
+        }, 250));
     }
     const handleMouseLeave = () => {
         clearTimeout(delayHandler);
         setDisplayText(id);
+        setLargeModifier(0);
     }
 
     const renderLines = () => {
@@ -39,7 +44,14 @@ const GraphNode = ({ id, r, cx, cy, lines, classNode }) => {
                         class={"circle " + classNode}
                     >
                     </circle>
-                    <text x={cx} y={cy} text-anchor="middle" stroke="#0d0d0dff" stroke-width="0.08vw" dy=".3em">{displayText}</text>
+                    <foreignObject
+                        x={cx - 5 - largeModifier}
+                        y={cy - 8 - (largeModifier * 0.8)}
+                        height={r * 2 + largeModifier + 5}
+                        width={r}
+                    >
+                        <div class="bubbleText">{displayText}</div>
+                    </foreignObject>
                 </g>
             </svg >
         )

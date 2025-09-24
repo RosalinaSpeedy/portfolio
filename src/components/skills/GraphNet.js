@@ -4,7 +4,19 @@ import skills from './skills.css';
 import FadeInElement from '../common/FadeInElement';
 import GraphNode from './GraphNode';
 
-const GraphNet = () => {
+const GraphNet = ({setHovered}) => {
+
+    const nodeText = {
+        a: "Proficient in machine learning and neural net development.",
+        b: "Completed several data science projects using TF.",
+        c: "Integrated LLMs into projects by tuning on custom datasets.",
+        d: "Experienced with Python dataset deconstruction and analysis.",
+        e: "Competent in deploying with HuggingFace and Flask.",
+        f: "Experienced with CNNs and RNNs to tackle classification tasks."
+    }
+
+    
+
     return (
         <FadeInElement><div id="graphContainer">
             <svg class="circleContainer" xmlns="http://www.w3.org/2000/svg">
@@ -22,6 +34,8 @@ const GraphNet = () => {
                             y2: 180
                         },
                     ]}
+                    text={nodeText.a}
+                    setHovered={setHovered}
                 />
                 <GraphNode
                     id="B"
@@ -37,8 +51,10 @@ const GraphNet = () => {
                             y2: 180
                         },
                     ]}
+                    text={nodeText.b}
+                    setHovered={setHovered}
                 />
-                
+
                 <GraphNode
                     id="C"
                     r={30}
@@ -53,6 +69,8 @@ const GraphNet = () => {
                             y2: 180
                         },
                     ]}
+                    text={nodeText.c}
+                    setHovered={setHovered}
                 />
                 <GraphNode
                     id="D"
@@ -74,6 +92,8 @@ const GraphNet = () => {
                             y2: 270
                         },
                     ]}
+                    text={nodeText.d}
+                    setHovered={setHovered}
                 />
                 <GraphNode
                     id="E"
@@ -89,8 +109,10 @@ const GraphNet = () => {
                             y2: 200
                         },
                     ]}
+                    text={nodeText.e}
+                    setHovered={setHovered}
                 />
-                
+
                 <GraphNode
                     id="F"
                     r={30}
@@ -100,6 +122,8 @@ const GraphNet = () => {
                     lines={[
 
                     ]}
+                    text={nodeText.f}
+                    setHovered={setHovered}
                 />
             </svg>
         </div></FadeInElement>

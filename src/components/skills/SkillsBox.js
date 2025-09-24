@@ -3,10 +3,14 @@ import skills from './skills.css';
 
 import FadeInElement from '../common/FadeInElement';
 import GraphNet from './GraphNet';
+import HoverSplash from './HoverSplash';
 
 
 
 const SkillsBox = ({ title, body }) => {
+
+    const [hovered, setHovered] = useState("fade-in-section is-visible");
+
     const renderTitle = (title) => {
         return (
             <div class="skillsInfoTitle">{title}</div>
@@ -45,8 +49,13 @@ const SkillsBox = ({ title, body }) => {
             case "AI and ML":
                 return (
                     <div class="AIAndMLDisplay">
-                        <GraphNet/>
-
+                        <HoverSplash
+                            hovered={hovered}
+                            setHovered={setHovered}
+                        />
+                        <GraphNet
+                            setHovered={setHovered}
+                        />
                     </div>
                 );
             default:
@@ -55,7 +64,8 @@ const SkillsBox = ({ title, body }) => {
     }
     const [visibleClass, setVisibleClass] = useState('fade-in-section');
     const [skillTitle, setSkillTitle] = useState(title);
-    const [skillBody, setSkillBody] = useState(body)
+    const [skillBody, setSkillBody] = useState(body);
+    
     //const sleep = ms => new Promise(r => setTimeout(r, ms));
     const [rerun, setRerun] = useState(false);
     useEffect(() => {
@@ -65,6 +75,7 @@ const SkillsBox = ({ title, body }) => {
     useEffect(() => {
         setTimeout(() => {
             setVisibleClass(`fade-in-section is-visible`)
+            setHovered("fade-in-section is-visible")
             setSkillBody(body);
             setSkillTitle(title);
         }, 1250);

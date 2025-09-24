@@ -257,8 +257,9 @@
     stroke-width: 3px;
     stroke: #CCCCCC;
 }
+
 .classNode {
-    fill:#c81e84;
+    fill: #c81e84;
 }
 
 g {
@@ -268,15 +269,37 @@ g {
 }
 
 .classNodeB {
-    fill:#569CD6;
+    fill: #569CD6;
 }
+
 g:hover circle {
     transition: all ease 0.3s;
     r: 75;
 }
+
 g:hover .classNodeB {
     fill: #aedbff;
 }
+
 g:hover .classNode {
-    fill:#ff9fd9;
+    fill: #ff9fd9;
+}
+
+.bubbleText {
+    font-weight: bolder;
+    display: flex;
+    height: inherit;
+    width: 20%;
+    text-align: center;
+}
+
+.hoverGraphic {
+    position: absolute;
+    top: 100;
+    left: 0;
+}
+
+.hoverText {
+    fill: #2EA043;
+    font: 150% sans-serif;
 }
