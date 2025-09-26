@@ -198,7 +198,7 @@
 
 .reactLogo {
     height: 14vh;
-    width: 20vw;
+    width: 10vw;
     pointer-events: none;
     margin-left: auto;
     margin-right: auto;
@@ -228,6 +228,16 @@
     margin: .6vh;
     margin-left: auto;
     margin-right: auto;
+}
+
+.homeButton:hover {
+    transition: 0.3s ease;
+    background-color: #192133;
+}
+
+.homeButton:active {
+    transition: 0.05s ease;
+    background-color: #CCCCCC;
 }
 
 .phoneBody {

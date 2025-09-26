@@ -6,13 +6,23 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const Terminal = ({setSkillsInfoTitle}) => {
     const [terminalText, setTerminalText] = useState("PF C:\\Ben\\Portfolio>");
+    const [words, setWords] = useState(["node index.js"]);
     return (
         <FadeInElement>
             <div class="terminalColumn">
                 <div class="terminalOptionsBar">
-                    <a onClick={() => setSkillsInfoTitle("Full Stack")}><div class="terminalOption fullStackOption">Full Stack</div></a>
-                    <a onClick={() => setSkillsInfoTitle("Mobile Apps")}><div class="terminalOption mobileAppsOption">Mobile Apps</div></a>
-                    <a onClick={() => setSkillsInfoTitle("AI and ML")}><div class="terminalOption AIAndMLOption">AI and ML</div></a>
+                    <a onClick={() => {
+                        setSkillsInfoTitle("Full Stack");
+                        setWords(["node index.js"]);
+                    }}><div class="terminalOption fullStackOption">Full Stack</div></a>
+                    <a onClick={() => {
+                        setSkillsInfoTitle("Mobile Apps");
+                        setWords(["npm start"]);
+                    }}><div class="terminalOption mobileAppsOption">Mobile Apps</div></a>
+                    <a onClick={() => {
+                        setSkillsInfoTitle("AI and ML");
+                        setWords(["python run main.py"]);
+                    }}><div class="terminalOption AIAndMLOption">AI and ML</div></a>
                 </div>
                 <div class="terminalContainer">
                     <div class="terminalHeader">
@@ -24,7 +34,7 @@ const Terminal = ({setSkillsInfoTitle}) => {
                     </div>
                     <div class="terminalText">{terminalText} 
                     <div class="terminalTypewriter"><Typewriter
-                        words={[""]}
+                        words={words}
                         cursor
                         cursorStyle="█"
                         typeSpeed={80}
