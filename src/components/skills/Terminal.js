@@ -1,27 +1,51 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import skills from './skills.css';
 
 import FadeInElement from '../common/FadeInElement';
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter, useTypewriter } from 'react-simple-typewriter'
 
-const Terminal = ({setSkillsInfoTitle}) => {
+
+
+const Terminal = ({ setSkillsInfoTitle }) => {
     const [terminalText, setTerminalText] = useState("PF C:\\Ben\\Portfolio>");
     const [words, setWords] = useState(["node index.js"]);
+    const [commandTyped, setCommandTyped] = useState(false);
+
+    const [reRender, setReRender] = useState(0);
+
+    const TypewriterOut = ({ words, onTyped }) => {
+        const [text] = useTypewriter({
+            words: words,
+            typeSpeed: 80,
+            deleteSpeed: Infinity,
+            loop: 1,
+            onLoopDone: (() => {
+                setCommandTyped(true)
+            })
+        })
+        return <div className="terminalTypewriter">{text}</div>;
+    }
+
+    const handleChange = (words, title) => {
+        
+        setSkillsInfoTitle(title);
+        setWords(words);
+        setCommandTyped(false);
+        setReRender(prev => prev + 1);
+    }
+
     return (
         <FadeInElement>
             <div class="terminalColumn">
                 <div class="terminalOptionsBar">
                     <a onClick={() => {
-                        setSkillsInfoTitle("Full Stack");
-                        setWords(["node index.js"]);
+                        handleChange(["node index.js"], "Full Stack");
                     }}><div class="terminalOption fullStackOption">Full Stack</div></a>
                     <a onClick={() => {
-                        setSkillsInfoTitle("Mobile Apps");
-                        setWords(["npm start"]);
+                        handleChange(["npm start"], "Mobile Apps");
                     }}><div class="terminalOption mobileAppsOption">Mobile Apps</div></a>
                     <a onClick={() => {
-                        setSkillsInfoTitle("AI and ML");
-                        setWords(["python run main.py"]);
+                        handleChange(["python run main.py"], "AI and ML");
                     }}><div class="terminalOption AIAndMLOption">AI and ML</div></a>
                 </div>
                 <div class="terminalContainer">
@@ -32,15 +56,20 @@ const Terminal = ({setSkillsInfoTitle}) => {
                         <a class="terminalHeaderLink"><div class="terminal">TERMINAL</div></a>
                         <a class="terminalHeaderLink"><div class="ports">PORTS</div></a>
                     </div>
-                    <div class="terminalText">{terminalText} 
-                    <div class="terminalTypewriter"><Typewriter
-                        words={words}
-                        cursor
-                        cursorStyle="█"
-                        typeSpeed={80}
-                        delaySpeed={200}
-                    />
-                    </div></div>
+                    <div class="terminalText">{terminalText}
+                        <TypewriterOut
+                            key={reRender}
+                            words={words}
+                        />
+                        {commandTyped && <div>
+                            <div>
+                                {"> Local:            http://localhost:3000"}
+                            </div>
+                            <div>
+                                {"> Node app listening on port 3000!"}
+                            </div>
+                        </div>}
+                    </div>
                 </div>
             </div>
         </FadeInElement>

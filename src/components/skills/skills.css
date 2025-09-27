@@ -313,3 +313,11 @@ g:hover .classNode {
     fill: #2EA043;
     font: 150% sans-serif;
 }
+
+.commandOutputTextWrapper * {
+    display: none;
+}
+
+.outputShown * {
+    display: block;
+}
