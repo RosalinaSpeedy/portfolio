@@ -24,20 +24,22 @@ const Terminal = ({ setSkillsInfoTitle }) => {
             })
         })
         if (!commandTyped) {
-            console.log("returning text")
+            //console.log("returning text")
             return <div className="terminalTypewriter">{text}</div>;
         } else {
             return <div className="terminalTypewriter">{words[0]}</div>
         }
-        
+
     }
 
-    const handleChange = (words, title) => {
-        
-        setSkillsInfoTitle(title);
-        setWords(words);
-        setCommandTyped(false);
-        setReRender(prev => prev + 1);
+    const handleChange = (newWords, title) => {
+        if (newWords[0] !== words[0]) {
+            setSkillsInfoTitle(title);
+            setWords(newWords);
+            setCommandTyped(false);
+            setReRender(prev => prev + 1);
+        }
+        return;
     }
 
     return (
