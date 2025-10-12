@@ -23,7 +23,13 @@ const Terminal = ({ setSkillsInfoTitle }) => {
                 setCommandTyped(true)
             })
         })
-        return <div className="terminalTypewriter">{text}</div>;
+        if (!commandTyped) {
+            console.log("returning text")
+            return <div className="terminalTypewriter">{text}</div>;
+        } else {
+            return <div className="terminalTypewriter">{words[0]}</div>
+        }
+        
     }
 
     const handleChange = (words, title) => {
