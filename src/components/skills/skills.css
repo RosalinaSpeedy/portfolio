@@ -328,3 +328,7 @@ g:hover .classNode {
 .versionPink { 
     color: #D69D85
 }
+
+.bigExpoOutput {
+    white-space: pre
+}

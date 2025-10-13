@@ -26,8 +26,11 @@ const terminalBodies = {
                 <div>
                     {"> expo start"}
                 </div>
-                <div>
-                    {"> expo start"}
+                <div class="bigExpoOutput">
+                    {"\n"}Starting project at C:\Ben\reactexample\app
+                    {"\n"}Developer tools running on http://localhost:8000
+                    {"\n"}Starting Metro Bundler
+                    {"\n\n"}› Metro waiting on exp://localhost:8000
                 </div>
             </div>
         )
