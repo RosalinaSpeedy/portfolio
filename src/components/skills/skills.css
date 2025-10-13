@@ -51,7 +51,10 @@
 
 .terminalText {
     margin-left: 0.6vw;
+}
 
+.outputCommands div {
+    display: block;
 }
 
 .terminalTypewriter {
@@ -320,4 +323,8 @@ g:hover .classNode {
 
 .outputShown * {
     display: block;
+}
+
+.versionPink { 
+    color: #D69D85
 }

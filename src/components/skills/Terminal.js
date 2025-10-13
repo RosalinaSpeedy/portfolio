@@ -4,7 +4,38 @@ import skills from './skills.css';
 import FadeInElement from '../common/FadeInElement';
 import { Typewriter, useTypewriter } from 'react-simple-typewriter'
 
+const terminalBodies = {
+    fullStack: () => {
+        return (
+            <div class="outputCommands">
+                <div>
+                    {"> Local:            http://localhost:3000"}
+                </div>
+                <div>
+                    {"> Node app listening on port 3000!"}
+                </div>
+            </div>
+        )
+    },
+    mobileApps: () => {
+        return (
+            <div class="outputCommands">
+                <div>
+                    &gt; portfolioexample@<span class="versionPink">1.0.0</span> start
+                </div>
+                <div>
+                    {"> expo start"}
+                </div>
+                <div>
+                    {"> expo start"}
+                </div>
+            </div>
+        )
+    },
+    AIAndML: () => {
 
+    }
+}
 
 const Terminal = ({ setSkillsInfoTitle }) => {
     const [terminalText, setTerminalText] = useState("PF C:\\Ben\\Portfolio>");
@@ -69,14 +100,7 @@ const Terminal = ({ setSkillsInfoTitle }) => {
                             key={reRender}
                             words={words}
                         />
-                        {commandTyped && <div>
-                            <div>
-                                {"> Local:            http://localhost:3000"}
-                            </div>
-                            <div>
-                                {"> Node app listening on port 3000!"}
-                            </div>
-                        </div>}
+                        {commandTyped && terminalBodies.mobileApps()}
                     </div>
                 </div>
             </div>
