@@ -332,3 +332,11 @@ g:hover .classNode {
 .bigExpoOutput {
     white-space: pre
 }
+
+.versionYellow {
+    color: #DCDCAA;
+}
+
+.normalOutput {
+    color: #CCCCCC;
+}
