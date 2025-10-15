@@ -39,10 +39,7 @@ const terminalBodies = {
         return (
             <div class="AIOutputCommands">
                 <div class="versionPink">
-                    &gt; python main.py
-                </div>
-                <div class="versionPink">
-                    {"\n"}Rendering AI Skill <span class="versionYellow">Graph</span><span class="normalOutput">...</span>
+                    {"\n"}{"\n"}Rendering AI Skill <span class="versionYellow">Graph</span><span class="normalOutput">...</span>
                 </div>
                 <div class="versionPink">
                     {"\n"}<span class="normalOutput">✔</span> <span class="versionYellow">Graph</span> Ready<span class="normalOutput">:</span> hover nodes to explore
