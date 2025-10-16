@@ -85,6 +85,21 @@ const Terminal = ({ setSkillsInfoTitle }) => {
         return;
     }
 
+    const getTerminalOutput = () => {
+        switch (words[0]) {
+            case "node index.js":
+                return terminalBodies.fullStack();
+            case "npm start":
+                return terminalBodies.mobileApps();
+            case "python run main.py":
+                return terminalBodies.AIAndML();
+            default:
+                return (
+                    <div>This should not appear</div>
+                )
+        }
+    }
+
     return (
         <FadeInElement>
             <div class="terminalColumn">
@@ -112,7 +127,7 @@ const Terminal = ({ setSkillsInfoTitle }) => {
                             key={reRender}
                             words={words}
                         />
-                        {commandTyped && terminalBodies.AIAndML()}
+                        {commandTyped && getTerminalOutput()}
                     </div>
                 </div>
             </div>
