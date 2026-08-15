@@ -7,12 +7,12 @@ import GraphNode from './GraphNode';
 const GraphNet = ({setHovered}) => {
 
     const nodeText = {
-        a: "Proficient in machine learning and neural net development.",
-        b: "Completed several data science projects using TF.",
-        c: "Integrated LLMs into projects by tuning on custom datasets.",
-        d: "Experienced with Python dataset deconstruction and analysis.",
-        e: "Competent in deploying with HuggingFace and Flask.",
-        f: "Experienced with CNNs and RNNs to tackle classification tasks."
+        a: "Proficient in\nmachine learning\nand neural net\ndevelopment.",
+        b: "Completed\nseveral data\nscience projects\nusing TF.",
+        c: "Integrated LLMs\ninto projects by\ntuning on\ncustom datasets.",
+        d: "Skilled with\n Python dataset\ndeconstruction\nand analysis.",
+        e: "Competent in\ndeploying\nwith HuggingFace\nand Flask.",
+        f: "Experienced\nwith CNNs & RNNs\nto tackle\nclassification\ntasks."
     }
 
     

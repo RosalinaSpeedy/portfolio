@@ -8,6 +8,7 @@ const GraphNode = ({ id, r, cx, cy, lines, classNode, text, setHovered }) => {
     const [delayHandler, setDelayHandler] = useState(null);
     const [largeModifier, setLargeModifier] = useState(0);
     
+    
 
     const handleMouseEnter = () => {
         setHovered("fade-in-section");
@@ -28,7 +29,16 @@ const GraphNode = ({ id, r, cx, cy, lines, classNode, text, setHovered }) => {
         />)
         return linesMapped
     }
-    const buildGraphic = () => {
+    const renderTextLines = (lineSplit) => {
+        let textLines = []
+        for (let i = 0; i < lineSplit.length; i++) {
+            textLines.push(<tspan x={cx} y={cy - r + i * 20}>{lineSplit[i]}</tspan>)
+        }
+        return textLines;
+    }
+    const buildGraphic = (text) => {
+        let lineSplit = displayText.split("\n");
+        console.log(text);
         return (
             <svg>
                 {renderLines()}
@@ -43,22 +53,24 @@ const GraphNode = ({ id, r, cx, cy, lines, classNode, text, setHovered }) => {
                         cy={cy}
                         class={"circle " + classNode}
                     >
+                        
                     </circle>
-                    <foreignObject
-                        x={cx - 5 - largeModifier}
-                        y={cy - 8 - (largeModifier * 0.8)}
-                        height={r * 2 + largeModifier + 5}
-                        width={r}
-                    >
-                        <div class="bubbleText">{displayText}</div>
-                    </foreignObject>
+                    {
+                        text.length > 1 ?
+                        <text x={cx} y={cy} text-anchor="middle" stroke="#000000" stroke-width="1px" dy=".3em">
+                            {renderTextLines(lineSplit)}
+                        </text> 
+                        : <text x={cx} y={cy} text-anchor="middle" stroke="#000000" stroke-width="1px" dy=".3em">{displayText}</text>
+                    }
+                    
+                        
                 </g>
             </svg >
         )
     }
     return (
         //<circle r={r} cx={cx} cy={cy} class="circle" />
-        buildGraphic()
+        buildGraphic(displayText)
     )
 }
 
