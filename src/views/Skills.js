@@ -5,7 +5,7 @@ import main from "./main.css";
 import SkillsTitle from '../components/skills/SkillsTitle';
 import Terminal from '../components/skills/Terminal';
 import SkillsBox from '../components/skills/SkillsBox';
-
+import ArrowButton from '../components/common/ArrowButton';
 
 
 
@@ -57,7 +57,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-
+            <ArrowButton href={""}/>
         </div>
     )
 }

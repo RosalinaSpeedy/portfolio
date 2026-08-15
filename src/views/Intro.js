@@ -8,7 +8,7 @@ import Splash from '../components/intro/Splash';
 
 const Intro = () => {
     return (
-        <div id="introContainer">
+        <div>
             <div>
                 <LogoButton/>
                 <div class="inlineHeader">
@@ -16,7 +16,10 @@ const Intro = () => {
                     <Navbar/>
                 </div>
             </div>
+        <div >
+            
             <Splash/>
+        </div>
         </div>
     )
 }

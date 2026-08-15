@@ -188,7 +188,7 @@
 }
 
 .phoneTop {
-    height: 4vh;
+    height: 2vh;
     width: 20vw;
     border-bottom: 2px #CCCCCC solid;
 }
@@ -199,15 +199,14 @@
 
 .phoneBody {
     width: 18vw;
-    padding: 1vw;
-    margin-bottom: 5vh;
+    padding: 0.55vw;
 }
 
 .phoneBase {
     width: 20vw;
     height: 3.5vw;
     border-top: 2px #CCCCCC solid;
-    margin-top: 8%;
+    margin-top: 4%;
 }
 
 .reactLogo {
@@ -274,7 +273,8 @@
 }
 
 #graphContainer {
-    height: 50vh;
+    margin-top: -5%;
+    height: 53vh;
 }
 
 .graphLine {

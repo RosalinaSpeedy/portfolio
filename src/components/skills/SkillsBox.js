@@ -4,6 +4,7 @@ import skills from './skills.css';
 import FadeInElement from '../common/FadeInElement';
 import GraphNet from './GraphNet';
 import HoverSplash from './HoverSplash';
+import ArrowButton from '../common/ArrowButton';
 
 
 
@@ -85,7 +86,9 @@ const SkillsBox = ({ title, body }) => {
         <FadeInElement><div class={`${visibleClass} skillsInfoContainer`}>
             {renderTitle(skillTitle)}
             {renderSkill(skillTitle, skillBody)}
-        </div></FadeInElement>
+        </div>
+        
+        </FadeInElement>
     )
 }
 

@@ -4,6 +4,8 @@ import intro from './intro.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
+import ArrowButton from '../common/ArrowButton';
+
 import FadeInElement from '../common/FadeInElement';
 
 const comments = ["/*".split(""),
@@ -79,7 +81,7 @@ const Splash = () => {
   }, [comment2Typed, comment1Typed, comment3Typed, comment4Typed, currentComment])
 
   return (
-    <div class="splashContainer">
+    <div id="introContainer" class="splashContainer">
       
       <div class="splashImage">
         
@@ -101,15 +103,7 @@ const Splash = () => {
           <div class={comment4Container}><div class={comment4Number}>28</div><div class="extraComment">{comment4Typed}</div></div>
         </div>
       </FadeInElement>
-      <FadeInElement>
-        <a href='#skillsContainer'><div class="arrowDownContainer">
-          <svg viewBox="0 0 47 80" class="arrows">
-            <path class="a1" d="M0 0 L23 32 L46 0"></path>
-            <path class="a2" d="M0 20 L23 52 L46 20"></path>
-            <path class="a3" d="M0 40 L23 72 L46 40"></path>
-          </svg>
-        </div></a>
-      </FadeInElement>
+      <ArrowButton href="#skillsContainer"/>
     </div>
   )
 }
