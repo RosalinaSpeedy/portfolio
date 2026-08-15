@@ -68,16 +68,27 @@
 }
 
 .terminalOptionsBar {
-    width: 33vw;
+    width: 100%;
     text-align: center;
     display: flex;
 }
 
-.terminalOptionsBar * {
+:has(> .fullStackOption) {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: auto; 
+}
+
+:has(> .mobileAppsOption) {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     flex: 1 1 auto;
+}
+:has(> .AIAndMLOption) {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .terminalOption {
